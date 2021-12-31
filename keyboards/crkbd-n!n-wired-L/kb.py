@@ -26,5 +26,5 @@ class KMKKeyboard(_KMKKeyboard):
     coord_mapping.extend(ic(1, x) for x in range(12))
     coord_mapping.extend(ic(2, x) for x in range(12))
 
-    # And now, to handle R3, which at this point is down to just six keys
+    # And now, to handle R3, which at this point is down to just six key
     coord_mapping.extend(ic(3, x) for x in range(3, 9))
