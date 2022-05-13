@@ -26,6 +26,10 @@ We want to se everything that can be enabled be enabled. If the keyboard has per
 
 We will look over the kb.py to make sure it looks good and is supporting the enabled features
 
+## Libs
+
+We will want to see a libraries zip file in `./libs` with the exact same name as your keyboard. This is required for the keyboard to work in peg. Your lib zip ( or zip's if split) should be every library required for the keyboard to work assume nothing is frozen in. Then zip that lib folder on your circuitPython drive so when its extracted you are left with a folder named lib with the libraries in it. It should **not** be a zip containing all of the libraries it **should** be a ziped folder of containing all of the libraries.
+
 ## Other files: 
 
 If you have other files like a readme that you want to add go for it just know they will not be shown in the Peg client.
