@@ -7,8 +7,9 @@ Let me get into what we look for in a keyboard.
 
 ## Name:
 
-Your folder name should be descriptive of the configuration it contains eg: crkbd-n!n-wired-L (crkbd with nice!nano as 
-wired left side)
+Your folder name should be descriptive of the configuration it contains eg: Foostan-crkbd-n!n-wired-L (Foostans crkbd with nice!nano as wired left side)
+
+Note on hand wires: You can add them but it must be under HandWire-boardname_by_yourname-controller-anything else
 
 ## Splits:
 
