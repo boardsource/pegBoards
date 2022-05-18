@@ -6,9 +6,9 @@ from kmk.scanners.encoder import RotaryioEncoder
 from kmk.scanners.keypad import MatrixScanner
 
 class KMKKeyboard(_KMKKeyboard):
-	def __init__(self):
+    def __init__(self):
         # create and register the scanner
-        self.matrix =[MatrixScanner(
+        self.matrix = [ MatrixScanner(
             # required arguments:
             column_pins=self.col_pins,
             row_pins=self.row_pins,
@@ -16,13 +16,9 @@ class KMKKeyboard(_KMKKeyboard):
             columns_to_anodes=DiodeOrientation.COL2ROW,
             interval=0.02,
             max_events=64
-        ),
-        RotaryioEncoder(
-            pin_a=board.GP07,
-            pin_b=board.GP23,
-            # optional
-            divisor=4,
-        )]
+        )
+
+        ]
     col_pins = (board.GP04, board.GP06, board.GP20, board.GP26, board.GP27)
     row_pins = (board.GP29, board.RX, board.GP05, board.GP22)
     diode_orientation = DiodeOrientation.COLUMNS

@@ -10,8 +10,8 @@
         "underglowCount": 8,
         "split": true,
         "rightSide": false,
-        "encoders": true,
-        "encoderCount": 2,
+        "encoders": false,
+        "encoderCount": 0,
         "rx_tx": false,
         "uartFlip": false
     },
