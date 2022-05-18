@@ -13,7 +13,8 @@
         "encoders": true,
         "encoderCount": 2,
         "rx_tx": true,
-        "uartFlip": false
+        "uartFlip": false,
+        "splitPico": false
     },
     "layout": [
         {

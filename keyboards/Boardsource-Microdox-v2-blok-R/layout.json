@@ -13,7 +13,8 @@
         "encoders": false,
         "encoderCount": 0,
         "rx_tx": false,
-        "uartFlip": false
+        "uartFlip": false,
+        "splitPico": true
     },
     "layout": [
         {
