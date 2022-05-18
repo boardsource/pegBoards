@@ -24,6 +24,9 @@ The spelling is important but the order is not.
 * `uartFlip`
     * Boolean
         * Is the keyboard split and is it configured for 2 wire communication and needs Uart Flipped?
+* `splitPico`
+    * Boolean
+        * Do you need to use `use_pio=True` in your split? this does it
 * `oled`
     * Boolean
         * Is the keyboard wired to have a OLED?

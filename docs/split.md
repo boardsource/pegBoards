@@ -14,12 +14,13 @@ There for no configuration is parsed in your main.py.
  Layout.json:
 
  Like we go over in the [layout docs](./layout.md)
- splits have 4/5 fields in the `"features":{` object.
+ splits have 5/6s fields in the `"features":{` object.
  ```json
 "rx_tx": true,
 "uartFlip": false,
 "split": true,
 "rightSide": false,
+"splitPico":false,
 "ble": false,
 ```
  * `rx_tx`
@@ -29,6 +30,8 @@ There for no configuration is parsed in your main.py.
  * `split`
     * bool
  * `rightSide`
+    * bool
+ * `splitPico`
     * bool
  * `ble`
     * bool
