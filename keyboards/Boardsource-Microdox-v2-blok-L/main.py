@@ -24,7 +24,7 @@ keyboard.extensions.append(rgb_ext)
 # TODO Comment one of these on each side
 split_side = SplitSide.LEFT
 #split_side = SplitSide.RIGHT
-split = Split(split_side = split_side)
+split = Split(split_side = split_side,use_pio=True)
 keyboard.modules.append(split)
 
 # keymap
