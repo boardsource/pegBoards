@@ -1,12 +1,18 @@
 # Encoders
 ## Kmk Part
-Peg Supports encoders configured using an [Rotary Encoder Scanners](https://github.com/KMKfw/kmk_firmware/blob/master/docs/scanners.md#rotary-encoder-scanners). 
-With this your keymap will hold your encoder keycodes and your keymap keycodes. 
-For your keyboard to be supported you need to configure it with the keycodes for encoders after your keymap keycodes. 
-Eg: 67 key keyboard with one encoder should have 69 keycodes in each layer 67 for the main matrix and 2 for the single encoder at the end of each layer array.
+
+Peg Supports encoders configured using an [Rotary Encoder
+Scanners](https://github.com/KMKfw/kmk_firmware/blob/master/docs/scanners.md#rotary-encoder-scanners).
+With this your keymap will hold your encoder keycodes and your keymap keycodes.
+For your keyboard to be supported you need to configure it with the keycodes for
+encoders after your keymap keycodes. Eg: 67 key keyboard with one encoder should
+have 69 keycodes in each layer 67 for the main matrix and 2 for the single
+encoder at the end of each layer array. 
+
 ## Peg part
+
 The peg client can not grantee that main.py or layout.json will be loaded first.
- Because of that we need to know the encoder count in both places.
+Because of that we need to know the encoder count in both places.
 
 Main.py:
 
@@ -17,7 +23,8 @@ Main.py:
 # encodercount
  ```
  `# encodercount` Is just like any other wrapping comment in Peg, the only difference is that in this case we only wrap another comment. 
- That comment being a space and number stating how many encoders this keymap has.  
+ 
+ That comment being a space and number stating how many encoders this keymap has.
 
  Layout.json:
 
@@ -27,7 +34,7 @@ Main.py:
 "encoders": true,
 "encoderCount": 2,
  ```
- * `encoders`
+* `encoders`
     * bool
 * `encoderCount`
     * int
