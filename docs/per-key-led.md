@@ -6,9 +6,6 @@ Peg Supports RGB LEDS configured using the
 [peg_rgb_matrix](https://github.com/KMKfw/kmk_firmware/blob/master/docs/peg_rgb_matrix.md)
 extension.
 
-
-
-
 ## Peg part
 
 Main.py:
@@ -21,7 +18,7 @@ returns the code needs to be read by a computer not by us.
 
 Kmk way:
 
-```python 
+```python
 rgb_ext = Rgb_matrix(ledDisplay=Rgb_matrix_data(
     keys=[
     [255,55,55],[55,55,55],[55,55,55],[55,55,55],[55,55,55],[55,55,55],                        [55,55,55],[55,55,55],[55,55,55],[55,55,55],[55,55,55],[255,55,55],
@@ -43,6 +40,7 @@ Peg way:
 ```python
 rgb_ext = Rgb_matrix(ledDisplay=[colors array...],split=True,rightSide=False,disable_auto_write=True)
 ```
+
 in peg map:
 
 ```python
@@ -66,14 +64,15 @@ Like we go over in the [layout docs](./layout.md) LEDs have 4 fields in the
 "perkeyCount": 58,
 "underglowCount": 12,
  ```
+
 * `perkey`
-    * bool
+  * bool
 * `underglow`
-    * bool
+  * bool
 * `perkeyCount`
-    * int
+  * int
 * `underglowCount`
-    * int
+  * int
 
 As well as `"underglow":[`array in the main object. This is configured in the
 same way as keys. x/y cords of where the underglow LEDS are on your board as if

@@ -5,7 +5,7 @@
 Peg Supports Splits with only one thing changed. If your keyboard uses 2 wire
 configuration you need to add rx and tx to your kb.py
 
-``` python 
+``` python
     rx = board.RX
     tx = board.TX
 ```
@@ -33,16 +33,16 @@ no configuration is parsed in your main.py.
 ```
 
 * `rx_tx`
-    * bool
+  * bool
 * `uartFlip`
-    * bool
+  * bool
 * `split`
-    * bool
+  * bool
 * `rightSide`
-    * bool
+  * bool
 * `splitPico`
-    * bool
+  * bool
 * `ble`
-    * bool
+  * bool
 
 [Return to main page](./README.md)

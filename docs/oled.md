@@ -24,15 +24,17 @@ oled_ext = Oled(OledData(corner_one={0:OledReactionType.STATIC,1:["layer"]},corn
 
 `# oled` Is just like any other wrapping comment in Peg, letting the client know
 that it should parse this code as a OLED configuration. So you need one comment
-above and below your OLED code. 
+above and below your OLED code.
 
 Layout.json:
 
 Like we go over in the [layout docs](./layout.md)
 Oled has 1 field in the `"features":{` object.
+
 ```json
 "oled": true,
  ```
+
 * `oled`
   * bool
 

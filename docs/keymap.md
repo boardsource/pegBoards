@@ -1,9 +1,12 @@
 # Keymap
+
 ## Kmk Part
+
 Almost nothing needs to be changed here if you keyboard works it takes no extra
 configuration to bring to peg.
 
 ## Peg part
+
 Main.py:
 
  In main.py add your keymap python code (example below) Peg does not support a
@@ -15,6 +18,7 @@ Main.py:
  no un-needed spaces or returns the code needs to be read by a computer not by
  us. Only return after a layer and one space before the first layer and after
  the last before the closing `]`.
+
  ```python
 # keymap
 keyboard.keymap = [ [layer 0...], 
