@@ -1,0 +1,1 @@
+{"code":"KC.LT(1, KC.SPC, tap_time=100)","display":"L1-SPC","keybinding":"","canHaveSub":false,"canHaveSubNumber":false,"subNumber":0,"Description":"Pushes layer 1 if held and space if tapped"}
