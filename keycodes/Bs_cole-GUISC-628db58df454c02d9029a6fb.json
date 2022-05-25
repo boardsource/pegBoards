@@ -1,0 +1,1 @@
+{"code":"KC.MT(KC.SCLN, KC.LGUI, tap_time=100)","display":"GUISC","keybinding":"","canHaveSub":false,"canHaveSubNumber":false,"subNumber":0,"Description":"Pushes gui if held and ; if tapped"}
