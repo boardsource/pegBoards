@@ -14,7 +14,8 @@
         "encoderCount": 0,
         "rx_tx": false,
         "uartFlip": false,
-        "splitPico": true
+        "splitPico": true,
+        "bootSize": 0
     },
     "layout": [
         {

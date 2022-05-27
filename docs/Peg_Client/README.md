@@ -11,6 +11,14 @@ Below you will find information going over each part of the Peg client and what 
 * [Options](./Options.md)
 * [Peg dev docs](../README.md)
 
+## Quick Start and Testing
+
+Using Peg is super simple. To get started all you need is a CircuitPython drive plugged into your computer. If your keyboard PCB has already been added to Peg, then you just have to plug in your book and select the correct PCB eg: Boardsource-Microdox_v2-blok-left. Then select the CIRCUITPY drive when prompted. Otherwise If your chosen PCB has not been added to Peg then you will need to add it [here](../README.md) are a link to the docs on how to do so. After Peg sets up your CircuitPython drive the UI will update and you will see your keymap. From there start dragging and dropping keycodes around to see how it feels.
+
+### Testing It Out
+
+If you want to test it out and see how it all works, you can do the same thing but just select a normal flash drive (back up any files on the flash drive). Then the same thing will happen the Peg client will pick it up and you can test out the client even without having a supported keyboard/controller. If you like it you can save those files on your flash drive and move them all to the micro-controller when you get it.
+
 ## Broad Strokes
 
 The Peg client will immediately start looking for a keyboard as soon as you launch the app.

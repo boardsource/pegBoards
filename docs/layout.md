@@ -60,6 +60,9 @@ The spelling is important but the order is not.
   * Int
     * How many encoders are configured? (for splits add up all encoders 1 on
           each side = encoderCount:2)
+* `bootSize`
+  * Int
+    * Leave at 0 unless you need a boot.py in that case then it should be one of the 2 numbers eg: 4096  will come out as `supervisor.set_next_stack_limit(4096 + 4096)` if included the client will generate the file if its not there.
 
 ## Layout
 

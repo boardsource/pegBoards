@@ -8,7 +8,8 @@
         "creator": "Boardsource",
         "perkeyCount": 38,
         "underglowCount": 10,
-        "split": false
+        "split": false,
+        "bootSize": 0
     },
     "layout": [
         {
