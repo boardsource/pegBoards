@@ -1,0 +1,1 @@
+{"codeblock":"\n\"\"\"\nmvp combos\n(w,e) -> esc\n(k,j) -> :\n\"\"\"\n\nfrom kmk.modules.combos import Combos, Chord, Sequence\ncombos = Combos()\ncombos.combos = [\n    Chord((KC.W, KC.E), KC.ESC),\n    Chord((KC.K, KC.J), KC.COLN)\n]\nkeyboard.modules.append(combos)\n"}
