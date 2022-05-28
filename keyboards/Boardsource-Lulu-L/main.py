@@ -25,7 +25,7 @@ keyboard.extensions.append(rgb_ext)
 # TODO Comment one of these on each side
 split_side = SplitSide.LEFT
 #split_side = SplitSide.RIGHT
-split = Split(split_side = split_side,data_pin=keyboard.rx, data_pin2=keyboard.tx, uart_flip=False)
+split = Split(data_pin=keyboard.rx, data_pin2=keyboard.tx, uart_flip=False)
 keyboard.modules.append(split)
 # encodercount
 # 2
