@@ -10,7 +10,7 @@ underglow you can swap between them depending on what LEDs you want to
 configure.
 
 To change the color of any led you can pick a color in the color picker down
-below, then select a key you want to change, and push the "set" button next to
+below, then select a key you want to change, and push the "Apply" button next to
 the color picker.
 To the right of the color picker you will see a grid of colors these are every
 color currently being used on your board from there you can set them just as if

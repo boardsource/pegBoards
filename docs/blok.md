@@ -40,15 +40,15 @@ Just because the Blok comes pre-flashed with Boardsource-python it does not stop
 
 ## Other pins broken out.
 
-| pin         | gpio   | capablityss                                             | Location                            |
+| pin         | gpio   | capability                                             | Location                            |
 |-------------|--------|---------------------------------------------------------|-------------------------------------|
-| Boot        | Boot   | tells controller to boot from internal storagee         | top left most pin                   |
+| Boot        | Boot   | tells controller to boot from internal storage         | top left most pin                   |
 | SWCLK       | SWCLK  | Access to the internal Serial Wire Debug multi-drop bus | bottom left above Boardsource logo  |
 | SWDIO       | SWDIO  | Access to the internal Serial Wire Debug multi-drop bus | bottom right above Boardsource logo |
 | RGB LED     | GPIO25 | Connected to RGB LED                                    | top right of board                  |
 | RGB LED VSS | VSS    | Next lead from RGB LED                                  | Under RGB LED on back side of board |
 
-## Quick start with peg
+## Quick start with Peg.
 
 If your keyboard PCB has already been added to Peg, then you just have to plug in your book and select the correct PCB eg: Boardsource-Microdox_v2-blok-left. Then select the CIRCUITPY drive when prompted. Otherwise If your chosen PCB has not been added to Peg then you will need to add it [here](https://peg.software/docs/) are a link to the docs on how to do so.
 
