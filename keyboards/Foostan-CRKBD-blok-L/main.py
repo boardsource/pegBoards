@@ -22,7 +22,7 @@ keyboard.extensions.append(rgb_ext)
 # TODO Comment one of these on each side
 split_side = SplitSide.LEFT
 #split_side = SplitSide.RIGHT
-split = Split(split_side = split_side,use_pio=True)
+split = Split(use_pio=True)
 keyboard.modules = [layers_ext, modtap,split]
 # keymap
 keyboard.keymap = [ [KC.MO(1),KC.MO(2),KC.RGB_TOG,KC.E,KC.R,KC.T,KC.Y,KC.U,KC.I,KC.O,KC.P,KC.BSPC,KC.ENTER,KC.A,KC.S,KC.D,KC.F,KC.G,KC.H,KC.J,KC.K,KC.L,KC.NO,KC.NO,KC.NO,KC.Z,KC.X,KC.C,KC.V,KC.B,KC.N,KC.M,KC.NO,KC.DOT,KC.NO,KC.NO,KC.NO,KC.NO,KC.NO,KC.NO,KC.NO,KC.NO,KC.RALT,KC.NO], 
