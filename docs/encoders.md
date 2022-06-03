@@ -3,7 +3,7 @@
 ## Kmk Part
 
 Peg Supports encoders configured using an [Rotary Encoder
-Scanners](https://github.com/KMKfw/kmk_firmware/blob/master/docs/scanners.md#rotary-encoder-scanners).
+Scanners](http://kmkfw.io/docs/scanners#rotary-encoder-scanners).
 With this your keymap will hold your encoder keycodes and your keymap keycodes.
 For your keyboard to be supported you need to configure it with the keycodes for
 encoders after your keymap keycodes. Eg: 67 key keyboard with one encoder should

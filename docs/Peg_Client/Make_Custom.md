@@ -9,6 +9,11 @@ keycodes you can click the "Show export Keycodes" button. This will first let
 you copy all of your current keycodes for safe keeping and give you a template
 to edit to make more.
 
+## Note 
+If you just want to make one or two advanced custom keycodes you can turn on "dev" mode in options. This will let you put any keycode you want in the code section. Please be aware that dev mode will let you make keycodes that don't work. Please test your keycodes before adding them it can be hard to debug a broken keycode.
+
+If you want to add a lot of custom codes it will probably be faster to use the json import feature, being that you can import as many as you want at the same time.
+
 You can make custom key codes by taking the exported json:
 
 ```json

@@ -1,12 +1,14 @@
 # Contributing
 
 First of all let me say thank you for adding your keyboard to Peg, we really
-appreciate it and it makes peg better for everyone.
+appreciate it and it makes Peg better for everyone.
 
 Next we expect that the kb.py main.py and layout.json have been tested in Peg
 and everything works. You do not need to do anything special to get your
-keyboard to show up in peg once it has a layout.json and main.py the Peg client
+keyboard to show up in Peg once it has a layout.json and main.py the Peg client
 should pick it up.
+
+To configure your kb.py, main.py and layout.json please see all of the other docs outside of the Peg Client section.
 
 Let me get into what we look for in a keyboard.
 
@@ -14,6 +16,12 @@ Let me get into what we look for in a keyboard.
 
 Your folder name should be descriptive of the configuration it contains eg:
 Foostan-crkbd-n!n-wired-L (Foostans crkbd with nice!nano as wired left side)
+
+So the format is:
+
+Creator-board_name-controller(if not integrated)-wired/wireless(if needed)-side L or R (if needed)
+
+The Creator and board_name should match what you have in your layout.json. You can not use spaces,or dashes "-" other then to separate the parts of the name If you wanted to do `Boardsource-Microdox-v2` it would need to be `Boardsource-Microdox_v2`. Please see the keyboards folder for examples.
 
 Note on hand wires: You can add them but it must be under
 HandWire-boardname_by_yourname-controller-anything else
@@ -54,5 +62,8 @@ libraries in it. It should **not** be a zip containing all of the libraries it
 
 If you have other files like a readme that you want to add go for it just know
 they will not be shown in the Peg client.
+
+### Note on the [Supported Keyboards list](https://peg.software/docs/Peg_Client/supported_keyboards)
+This is a auto generated markdown file and you will not find it in this repo. That being said you dont have to worry about adding your keyboard to that list as soon as your pr is accepted it will be added to that page.
 
 [Return to main page](./README.md)

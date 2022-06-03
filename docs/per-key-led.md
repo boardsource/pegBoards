@@ -3,7 +3,7 @@
 ## Kmk Part
 
 Peg Supports RGB LEDS configured using the
-[peg_rgb_matrix](https://github.com/KMKfw/kmk_firmware/blob/master/docs/peg_rgb_matrix.md)
+[peg_rgb_matrix](http://kmkfw.io/docs/peg_rgb_matrix)
 extension.
 
 ## Peg part

@@ -6,7 +6,7 @@ load it up in the peg client to make sure everything is working as intended.
 
 ## Features
 
-`features` Is an object with 14 fields all of them need to be set even if the
+`features` Is an object with 16 fields all of them need to be set even if the
 value is 0 or false.
 The spelling is important but the order is not.
 

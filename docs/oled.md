@@ -3,7 +3,7 @@
 ## Kmk Part
 
 Peg Supports Oleds configured using the
-[peg_oled_display](https://github.com/KMKfw/kmk_firmware/blob/master/docs/peg_oled_display.md)
+[peg_oled_display](http://kmkfw.io/docs/peg_oled_display)
 extension. This extension and there for peg only support 32x128 OLEDS.
 
 ## Peg part
