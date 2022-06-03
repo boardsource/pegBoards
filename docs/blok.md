@@ -50,7 +50,7 @@ Just because the Blok comes pre-flashed with Boardsource-python it does not stop
 
 ## Quickstart with Peg.
 
-If your keyboard PCB has already been added to Peg, then you just have to plug in your book and select the correct PCB eg: Boardsource-Microdox_v2-blok-left. Then select the CIRCUITPY drive when prompted. Otherwise, If your chosen PCB has not been added to Peg then you will need to add it [here](https://peg.software/docs/) are a link to the docs on how to do so.
+If your keyboard PCB has already been added to Peg, then you just have to plug in your book and select the correct PCB eg: Boardsource-Microdox_v2-blok-left. Then select the CIRCUITPY drive when prompted. Otherwise, If your chosen PCB has not been added to Peg [check here](https://peg.software/docs/Peg_Client/supported_keyboards) then you will need to add it [here](https://peg.software/docs/) are a link to the docs on how to do so.
 
 
 ## CircuitPython overview and test code.
