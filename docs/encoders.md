@@ -12,7 +12,7 @@ encoder at the end of each layer array.
 
 ## Peg part
 
-The peg client can not grantee that main.py or layout.json will be loaded first.
+The peg client can not guarantee that main.py or layout.json will be loaded first.
 Because of that we need to know the encoder count in both places.
 
 Main.py:
