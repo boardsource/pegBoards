@@ -1,5 +1,5 @@
+import sys
 from kb import KMKKeyboard
-
 from kmk.hid import HIDModes
 from kmk.keys import KC
 from kmk.modules.layers import Layers
@@ -14,7 +14,7 @@ from kmk.extensions.peg_oled_display import (
     OledDisplayMode,
     OledReactionType,
 )
-from kmk.extensions.peg_rgb_matrix import Rgb_matrix
+from kmk.extensions.peg_rgb_matrix import Rgb_matrix, Color
 from kmk.extensions.international import International
 
 keyboard = KMKKeyboard()
@@ -33,37 +33,35 @@ keyboard.extensions = [MediaKeys(), International()]
 split = Split(split_type=SplitType.UART, use_pio=True, split_side=SplitSide.RIGHT)
 keyboard.modules.append(split)
 
-# fmt: off
 # ledmap
 rgb_ext = Rgb_matrix(
     ledDisplay=[
-        [55, 55, 55],
-        [55, 55, 55],
-        [55, 55, 55],
-        [55, 55, 55],
-        [55, 55, 55],
-        [55, 55, 55],
-        [55, 55, 55],
-        [55, 55, 55],
-        [55, 55, 55],
-        [55, 55, 55],
-        [55, 55, 55],
-        [55, 55, 55],
-        [55, 55, 55],
-        [55, 55, 55],
-        [55, 55, 55],
-        [55, 55, 55],
-        [55, 55, 55],
-        [55, 55, 55],
-        [55, 55, 55],
-        [55, 55, 55],
+        Color.OFF,
+        Color.OFF,
+        Color.RED,
+        Color.ORANGE,
+        Color.OFF,
+        Color.YELLOW,
+        Color.GREEN,
+        Color.BLUE,
+        Color.PURPLE,
+        Color.OFF,
+        Color.OFF,
+        Color.PURPLE,
+        Color.BLUE,
+        Color.GREEN,
+        Color.YELLOW,
+        Color.OFF,
+        Color.ORANGE,
+        Color.RED,
+        Color.OFF,
+        Color.OFF,
     ],
     split=True,
     rightSide=True,
-    disable_auto_write=True,
+    disable_auto_write=False,
 )
 # ledmap
-# fmt: on
 
 keyboard.extensions.append(rgb_ext)
 
@@ -72,19 +70,28 @@ oled_ext = Oled(
     OledData(
         corner_one={
             0: OledReactionType.STATIC,
-            1: ["1 2 3 4 5 6", "", "", "", "", "", "", ""],
+            1: ["Kyria v1", "", "", "", "", "", "", ""],
         },
         corner_two={
-            0: OledReactionType.STATIC,
-            1: [" 7 8 Layer", "", "", "", "", "", "", " 7 8 Layer"],
+            0: OledReactionType.LAYER,
+            1: [
+                "QWERTY",
+                "DVORAK",
+                "COLEMAK-DH",
+                "LOWER",
+                "RAISE",
+                "FUNC",
+                "ADJUST",
+                "",
+            ],
         },
         corner_three={
-            0: OledReactionType.LAYER,
-            1: ["^", "  ^", "    ^", "      ^", "        ^", "          ^", "", ""],
+            0: OledReactionType.STATIC,
+            1: [sys.platform, "", "", "", "", "", "", ""],
         },
         corner_four={
-            0: OledReactionType.LAYER,
-            1: ["", "", "", "", "", "", " ^", "   ^"],
+            0: OledReactionType.STATIC,
+            1: ["", "", "", "", "", "", "", ""],
         },
     ),
     toDisplay=OledDisplayMode.TXT,
@@ -143,10 +150,16 @@ keyboard.keymap = [
     ],
     [
         KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.DF(0),      KC.TRNS,       KC.TRNS,                                                                   KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,
-        KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.DF(1),      KC.TRNS,       KC.TRNS,                                                                   KC.RGB_TOG,    KC.TRNS,    KC.TRNS,    KC.RGB_BRI,    KC.TRNS,    KC.TRNS,
-        KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.DF(2),      KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,    KC.TRNS,    KC.RGB_BRD,    KC.TRNS,    KC.TRNS,
+        KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.DF(1),      KC.TRNS,       KC.TRNS,                                                                   KC.RGB_TOG,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,
+        KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.DF(2),      KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,
                                                      KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,
     ],
+    [
+        KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,      KC.TRNS,       KC.TRNS,                                                                   KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,
+        KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,      KC.TRNS,       KC.TRNS,                                                                   KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,
+        KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,      KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,
+                                                     KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,
+    ]
 ]
 # keymap
 # fmt: on

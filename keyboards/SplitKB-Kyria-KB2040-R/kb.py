@@ -3,6 +3,7 @@ import board
 from kmk.kmk_keyboard import KMKKeyboard as _KMKKeyboard
 from kmk.scanners import DiodeOrientation
 
+
 class KMKKeyboard(_KMKKeyboard):
     col_pins = (
         board.A3,
@@ -24,6 +25,8 @@ class KMKKeyboard(_KMKKeyboard):
     encoder_pin_1 = board.D5
     brightness_limit = 0.5
     num_pixels = 20
+    # These are the underglow LED positions on the Kyria
+    led_key_pos = [9, 8, 5, 6, 7, 4, 2, 3, 1, 0, 10, 11, 13, 12, 14, 17, 16, 15, 18, 19]
 
     # fmt: off
     coord_mapping = [
