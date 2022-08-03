@@ -143,8 +143,8 @@ keyboard.keymap = [
     ],
     [
         KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.DF(0),      KC.TRNS,       KC.TRNS,                                                                   KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,
-        KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.DF(1),      KC.TRNS,       KC.TRNS,                                                                   KC.RGB_TOG,    KC.RGB_SAI,    KC.RGB_HUI,    KC.RGB_VAI,    KC.RGB_M_P,    KC.TRNS,
-        KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.DF(2),      KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.RGB_SAD,    KC.RGB_HUD,    KC.RGB_VAD,    KC.RGB_M_P,    KC.TRNS,
+        KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.DF(1),      KC.TRNS,       KC.TRNS,                                                                   KC.RGB_TOG,    KC.TRNS,    KC.TRNS,    KC.RGB_BRI,    KC.TRNS,    KC.TRNS,
+        KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.DF(2),      KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,    KC.TRNS,    KC.RGB_BRD,    KC.TRNS,    KC.TRNS,
                                                      KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,
     ],
 ]

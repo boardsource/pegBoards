@@ -22,6 +22,8 @@ class KMKKeyboard(_KMKKeyboard):
     SDA = board.D2
     encoder_pin_0 = board.D5
     encoder_pin_1 = board.D9
+    brightness_limit = 0.5
+    num_pixels = 20
 
     # fmt: off
     coord_mapping = [
