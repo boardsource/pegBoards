@@ -4,15 +4,17 @@ from kmk.hid import HIDModes
 from kmk.keys import KC
 from kmk.modules.layers import Layers
 from kmk.modules.modtap import ModTap
-from kmk.modules.split import Split, SplitType
+from kmk.modules.split import Split, SplitType, SplitSide
 from kmk.modules.tapdance import TapDance
 from kmk.modules.encoder import EncoderHandler
-from kmk.extensions.rgb import RGB, AnimationModes
 from kmk.extensions.media_keys import MediaKeys
-from kmk.extensions.oled import (
+from kmk.extensions.peg_oled_display import (
     Oled,
     OledData,
+    OledDisplayMode,
+    OledReactionType,
 )
+from kmk.extensions.peg_rgb_matrix import Rgb_matrix
 from kmk.extensions.international import International
 
 keyboard = KMKKeyboard()
@@ -28,40 +30,68 @@ encoder_handler.pins = ((keyboard.encoder_pin_0, keyboard.encoder_pin_1, None, F
 keyboard.modules = [Layers(), ModTap(), TapDance()]
 keyboard.extensions = [MediaKeys(), International()]
 
-split = Split(split_type=SplitType.UART, use_pio=True)
+split = Split(split_type=SplitType.UART, use_pio=True, split_side=SplitSide.LEFT)
 keyboard.modules.append(split)
 
+# fmt: off
 # ledmap
-# ledmap
-
-rgb_ext = RGB(
-    pixel_pin=keyboard.rgb_pixel_pin,
-    num_pixels=12,
-    val_limit=200,
-    val_default=20,
-    animation_mode=AnimationModes.BREATHING_RAINBOW,
+rgb_ext = Rgb_matrix(
+    ledDisplay=[
+        [55, 55, 55],
+        [55, 55, 55],
+        [55, 55, 55],
+        [55, 55, 55],
+        [55, 55, 55],
+        [55, 55, 55],
+        [55, 55, 55],
+        [55, 55, 55],
+        [55, 55, 55],
+        [55, 55, 55],
+        [55, 55, 55],
+        [55, 55, 55],
+        [55, 55, 55],
+        [55, 55, 55],
+        [55, 55, 55],
+        [55, 55, 55],
+        [55, 55, 55],
+        [55, 55, 55],
+        [55, 55, 55],
+        [55, 55, 55],
+    ],
+    split=True,
+    rightSide=False,
+    disable_auto_write=True,
 )
+# ledmap
+# fmt: on
 
 keyboard.extensions.append(rgb_ext)
 
 # oled
-# oled
-
 oled_ext = Oled(
     OledData(
-        labels=[
-            OledData.oled_text_entry(text="Kyria v1.4", x=0, y=0),
-            OledData.oled_text_entry(text="KB2040", x=0, y=10),
-            OledData.oled_text_entry(text="Layer: ", x=0, y=20),
-            OledData.oled_text_entry(text="BASE", x=42, y=20, layer=0),
-            OledData.oled_text_entry(text="LOWER", x=0, y=30, layer=3),
-            OledData.oled_text_entry(text="RAISE", x=42, y=20, layer=4),
-            OledData.oled_text_entry(text="ADJUST", x=42, y=20, layer=6),
-        ]
+        corner_one={
+            0: OledReactionType.STATIC,
+            1: ["1 2 3 4 5 6", "", "", "", "", "", "", ""],
+        },
+        corner_two={
+            0: OledReactionType.STATIC,
+            1: [" 7 8 Layer", "", "", "", "", "", "", " 7 8 Layer"],
+        },
+        corner_three={
+            0: OledReactionType.LAYER,
+            1: ["^", "  ^", "    ^", "      ^", "        ^", "          ^", "", ""],
+        },
+        corner_four={
+            0: OledReactionType.LAYER,
+            1: ["", "", "", "", "", "", " ^", "   ^"],
+        },
     ),
+    toDisplay=OledDisplayMode.TXT,
     oHeight=64,
     flip=True,
 )
+# oled
 
 keyboard.extensions.append(oled_ext)
 

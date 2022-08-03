@@ -9,7 +9,7 @@
         "perkeyCount": 0,
         "underglowCount": 20,
         "split": true,
-        "rightSide": false,
+        "rightSide": true,
         "encoders": false,
         "encoderCount": 2,
         "rx_tx": false,
