@@ -30,7 +30,7 @@ encoder_handler.pins = ((keyboard.encoder_pin_0, keyboard.encoder_pin_1, None, F
 keyboard.modules = [Layers(), ModTap(), TapDance()]
 keyboard.extensions = [MediaKeys(), International()]
 
-split = Split(split_type=SplitType.UART, use_pio=True, split_side=SplitSide.RIGHT,split_target_left=False)
+split = Split(split_type=SplitType.UART, use_pio=True, split_side=SplitSide.RIGHT)
 keyboard.modules.append(split)
 
 # ledmap
@@ -89,22 +89,22 @@ keyboard.extensions.append(oled_ext)
 # keymap
 keyboard.keymap = [
     [
-        KC.TAB,        KC.Q,          KC.W,          KC.E,          KC.R,          KC.T,                                                                      KC.Y,          KC.U,          KC.I,          KC.O,          KC.P,          KC.BSPC,
-        KC.MT(KC.ESC, KC.LCTL),      KC.A,          KC.S,          KC.D,          KC.F,          KC.G,                                                                      KC.H,          KC.J,          KC.K,          KC.L,          KC.SCLN,       KC.MT(KC.QUOTE, KC.RCTL),
-        KC.LSFT,       KC.Z,          KC.X,          KC.C,          KC.V,          KC.B,          KC.LBRC,       KC.CAPS,       KC.MO(5),      KC.RBRC,       KC.N,          KC.M,          KC.COMM,       KC.DOT,        KC.SLSH,       KC.RSFT,
-                                                     KC.MO(6),      KC.LGUI,       KC.MT(KC.ENT, KC.LALT),      KC.SPC,        KC.MO(3),      KC.MO(4),      KC.SPC,        KC.RALT,       KC.RGUI,       KC.APP,
+        KC.TAB,                 KC.Q,   KC.W,   KC.E,       KC.R,       KC.T,                                                                       KC.Y,       KC.U,       KC.I,       KC.O,       KC.P,       KC.BSPC,
+        KC.MT(KC.ESC, KC.LCTL), KC.A,   KC.S,   KC.D,       KC.F,       KC.G,                                                                       KC.H,       KC.J,       KC.K,       KC.L,       KC.SCLN,    KC.MT(KC.QUOTE, KC.RCTL),
+        KC.LSFT,                KC.Z,   KC.X,   KC.C,       KC.V,       KC.B,                   KC.LBRC,    KC.CAPS,        KC.MO(5),   KC.RBRC,    KC.N,       KC.M,       KC.COMM,    KC.DOT,     KC.SLSH,    KC.RSFT,
+                                                KC.MO(6),   KC.LGUI,    KC.MT(KC.ENT, KC.LALT), KC.SPC,     KC.MO(3),       KC.MO(4),   KC.SPC,     KC.RALT,    KC.RGUI,    KC.APP,
     ],
     [
-        KC.TAB,        KC.QUOT,       KC.COMM,       KC.DOT,        KC.P,          KC.Y,                                                                      KC.F,          KC.G,          KC.C,          KC.R,          KC.L,          KC.BSPC,
-        KC.MT(KC.ESC, KC.LCTL),      KC.A,          KC.O,          KC.E,          KC.U,          KC.I,                                                                      KC.D,          KC.H,          KC.T,          KC.N,          KC.S,          KC.MT(KC.MINUS, KC.RCTL),
-        KC.LSFT,       KC.SCLN,       KC.Q,          KC.J,          KC.K,          KC.X,          KC.LBRC,       KC.CAPS,       KC.MO(5),      KC.RBRC,       KC.B,          KC.M,          KC.W,          KC.V,          KC.Z,          KC.RSFT,
-                                                     KC.MO(6),      KC.LGUI,       KC.MT(KC.ENT, KC.LALT),      KC.SPC,        KC.MO(3),      KC.MO(4),      KC.SPC,        KC.RALT,       KC.RGUI,       KC.APP,
+        KC.TAB,                 KC.QUOT,    KC.COMM,    KC.DOT,     KC.P,       KC.Y,                                                                       KC.F,       KC.G,       KC.C,   KC.R,   KC.L,   KC.BSPC,
+        KC.MT(KC.ESC, KC.LCTL), KC.A,       KC.O,       KC.E,       KC.U,       KC.I,                                                                       KC.D,       KC.H,       KC.T,   KC.N,   KC.S,   KC.MT(KC.MINUS, KC.RCTL),
+        KC.LSFT,                KC.SCLN,    KC.Q,       KC.J,       KC.K,       KC.X,                   KC.LBRC,    KC.CAPS,        KC.MO(5),   KC.RBRC,    KC.B,       KC.M,       KC.W,   KC.V,   KC.Z,   KC.RSFT,
+                                                        KC.MO(6),   KC.LGUI,    KC.MT(KC.ENT, KC.LALT), KC.SPC,     KC.MO(3),       KC.MO(4),   KC.SPC,     KC.RALT,    KC.RGUI,    KC.APP,
     ],
     [
-        KC.TAB,        KC.Q,          KC.W,          KC.F,          KC.P,          KC.B,                                                                      KC.J,          KC.L,          KC.U,          KC.Y,          KC.SCLN,       KC.BSPC,
-        KC.MT(KC.ESC, KC.LCTL),      KC.A,          KC.R,          KC.S,          KC.T,          KC.G,                                                                      KC.M,          KC.N,          KC.E,          KC.I,          KC.O,          KC.MT(KC.QUOTE, KC.RCTL),
-        KC.LSFT,       KC.Z,          KC.X,          KC.C,          KC.D,          KC.V,          KC.LBRC,       KC.CAPS,       KC.MO(5),      KC.RBRC,       KC.K,          KC.H,          KC.COMM,       KC.DOT,        KC.SLSH,       KC.RSFT,
-                                                     KC.MO(6),      KC.LGUI,       KC.MT(KC.ENT, KC.LALT),      KC.SPC,        KC.MO(3),      KC.MO(4),      KC.SPC,        KC.RALT,       KC.RGUI,       KC.APP,
+        KC.TAB,                 KC.Q,   KC.W,   KC.F,       KC.P,       KC.B,                                                                       KC.J,       KC.L,       KC.U,       KC.Y,   KC.SCLN,    KC.BSPC,
+        KC.MT(KC.ESC, KC.LCTL), KC.A,   KC.R,   KC.S,       KC.T,       KC.G,                                                                       KC.M,       KC.N,       KC.E,       KC.I,   KC.O,       KC.MT(KC.QUOTE, KC.RCTL),
+        KC.LSFT,                KC.Z,   KC.X,   KC.C,       KC.D,       KC.V,                   KC.LBRC,    KC.CAPS,        KC.MO(5),   KC.RBRC,    KC.K,       KC.H,       KC.COMM,    KC.DOT, KC.SLSH,    KC.RSFT,
+                                                KC.MO(6),   KC.LGUI,    KC.MT(KC.ENT, KC.LALT), KC.SPC,     KC.MO(3),       KC.MO(4),   KC.SPC,     KC.RALT,    KC.RGUI,    KC.APP,
     ],
     [
         KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,                                                    KC.PGUP,    KC.HOME,    KC.UP,      KC.END,     KC.VOLU,    KC.DEL,
@@ -125,17 +125,11 @@ keyboard.keymap = [
                                             KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,
     ],
     [
-        KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.DF(0),      KC.TRNS,       KC.TRNS,                                                                   KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,
-        KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.DF(1),      KC.TRNS,       KC.TRNS,                                                                   KC.RGB_TOG,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,
-        KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.DF(2),      KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,
-                                                     KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,
+        KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.DF(0),      KC.TRNS,       KC.TRNS,                                                                   KC.TRNS,       KC.TRNS,   KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,
+        KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.DF(1),      KC.TRNS,       KC.TRNS,                                                                   KC.RGB_TOG,    KC.TRNS,   KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,
+        KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.DF(2),      KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,   KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,
+                                                     KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,   KC.TRNS,
     ],
-    [
-        KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,      KC.TRNS,       KC.TRNS,                                                                   KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,
-        KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,      KC.TRNS,       KC.TRNS,                                                                   KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,
-        KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,      KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,
-                                                     KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,       KC.TRNS,
-    ]
 ]
 # keymap
 # fmt: on
