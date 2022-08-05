@@ -30,7 +30,7 @@ encoder_handler.pins = ((keyboard.encoder_pin_0, keyboard.encoder_pin_1, None, F
 keyboard.modules = [Layers(), ModTap(), TapDance()]
 keyboard.extensions = [MediaKeys(), International()]
 
-split = Split(split_type=SplitType.UART, use_pio=True, split_side=SplitSide.RIGHT)
+split = Split(split_type=SplitType.UART, use_pio=True, split_side=SplitSide.RIGHT,split_target_left=False)
 keyboard.modules.append(split)
 
 # ledmap
@@ -45,8 +45,8 @@ rgb_ext = Rgb_matrix(
         Color.GREEN,
         Color.BLUE,
         Color.PURPLE,
-        Color.OFF,
-        Color.OFF,
+        Color.WHITE,
+        Color.WHITE,
         Color.PURPLE,
         Color.BLUE,
         Color.GREEN,
@@ -68,33 +68,13 @@ keyboard.extensions.append(rgb_ext)
 # oled
 oled_ext = Oled(
     OledData(
-        corner_one={
+        image={
             0: OledReactionType.STATIC,
-            1: ["Kyria v1", "", "", "", "", "", "", ""],
-        },
-        corner_two={
-            0: OledReactionType.LAYER,
-            1: [
-                "QWERTY",
-                "DVORAK",
-                "COLEMAK-DH",
-                "LOWER",
-                "RAISE",
-                "FUNC",
-                "ADJUST",
-                "",
-            ],
-        },
-        corner_three={
-            0: OledReactionType.STATIC,
-            1: [sys.platform, "", "", "", "", "", "", ""],
-        },
-        corner_four={
-            0: OledReactionType.STATIC,
-            1: ["", "", "", "", "", "", "", ""],
+            1: ["Kyria_OLED_display.bmp"],
         },
     ),
-    toDisplay=OledDisplayMode.TXT,
+    toDisplay=OledDisplayMode.IMG,
+    oWidth=128,
     oHeight=64,
     flip=True,
 )
@@ -104,31 +84,27 @@ keyboard.extensions.append(oled_ext)
 
 # Edit your layout below
 # Currently, that's a default QMK Kyria Layout - https://config.qmk.fm/#/splitkb/kyria/rev1/LAYOUT
-ESC_LCTL = KC.MT(KC.ESC, KC.LCTL)
-QUOTE_RCTL = KC.MT(KC.QUOTE, KC.RCTL)
-ENT_LALT = KC.MT(KC.ENT, KC.LALT)
-MINUS_RCTL = KC.MT(KC.MINUS, KC.RCTL)
 
 # fmt: off
 # keymap
 keyboard.keymap = [
     [
         KC.TAB,        KC.Q,          KC.W,          KC.E,          KC.R,          KC.T,                                                                      KC.Y,          KC.U,          KC.I,          KC.O,          KC.P,          KC.BSPC,
-        ESC_LCTL,      KC.A,          KC.S,          KC.D,          KC.F,          KC.G,                                                                      KC.H,          KC.J,          KC.K,          KC.L,          KC.SCLN,       QUOTE_RCTL,
+        KC.MT(KC.ESC, KC.LCTL),      KC.A,          KC.S,          KC.D,          KC.F,          KC.G,                                                                      KC.H,          KC.J,          KC.K,          KC.L,          KC.SCLN,       KC.MT(KC.QUOTE, KC.RCTL),
         KC.LSFT,       KC.Z,          KC.X,          KC.C,          KC.V,          KC.B,          KC.LBRC,       KC.CAPS,       KC.MO(5),      KC.RBRC,       KC.N,          KC.M,          KC.COMM,       KC.DOT,        KC.SLSH,       KC.RSFT,
-                                                     KC.MO(6),      KC.LGUI,       ENT_LALT,      KC.SPC,        KC.MO(3),      KC.MO(4),      KC.SPC,        KC.RALT,       KC.RGUI,       KC.APP,
+                                                     KC.MO(6),      KC.LGUI,       KC.MT(KC.ENT, KC.LALT),      KC.SPC,        KC.MO(3),      KC.MO(4),      KC.SPC,        KC.RALT,       KC.RGUI,       KC.APP,
     ],
     [
         KC.TAB,        KC.QUOT,       KC.COMM,       KC.DOT,        KC.P,          KC.Y,                                                                      KC.F,          KC.G,          KC.C,          KC.R,          KC.L,          KC.BSPC,
-        ESC_LCTL,      KC.A,          KC.O,          KC.E,          KC.U,          KC.I,                                                                      KC.D,          KC.H,          KC.T,          KC.N,          KC.S,          MINUS_RCTL,
+        KC.MT(KC.ESC, KC.LCTL),      KC.A,          KC.O,          KC.E,          KC.U,          KC.I,                                                                      KC.D,          KC.H,          KC.T,          KC.N,          KC.S,          KC.MT(KC.MINUS, KC.RCTL),
         KC.LSFT,       KC.SCLN,       KC.Q,          KC.J,          KC.K,          KC.X,          KC.LBRC,       KC.CAPS,       KC.MO(5),      KC.RBRC,       KC.B,          KC.M,          KC.W,          KC.V,          KC.Z,          KC.RSFT,
-                                                     KC.MO(6),      KC.LGUI,       ENT_LALT,      KC.SPC,        KC.MO(3),      KC.MO(4),      KC.SPC,        KC.RALT,       KC.RGUI,       KC.APP,
+                                                     KC.MO(6),      KC.LGUI,       KC.MT(KC.ENT, KC.LALT),      KC.SPC,        KC.MO(3),      KC.MO(4),      KC.SPC,        KC.RALT,       KC.RGUI,       KC.APP,
     ],
     [
         KC.TAB,        KC.Q,          KC.W,          KC.F,          KC.P,          KC.B,                                                                      KC.J,          KC.L,          KC.U,          KC.Y,          KC.SCLN,       KC.BSPC,
-        ESC_LCTL,      KC.A,          KC.R,          KC.S,          KC.T,          KC.G,                                                                      KC.M,          KC.N,          KC.E,          KC.I,          KC.O,          QUOTE_RCTL,
+        KC.MT(KC.ESC, KC.LCTL),      KC.A,          KC.R,          KC.S,          KC.T,          KC.G,                                                                      KC.M,          KC.N,          KC.E,          KC.I,          KC.O,          KC.MT(KC.QUOTE, KC.RCTL),
         KC.LSFT,       KC.Z,          KC.X,          KC.C,          KC.D,          KC.V,          KC.LBRC,       KC.CAPS,       KC.MO(5),      KC.RBRC,       KC.K,          KC.H,          KC.COMM,       KC.DOT,        KC.SLSH,       KC.RSFT,
-                                                     KC.MO(6),      KC.LGUI,       ENT_LALT,      KC.SPC,        KC.MO(3),      KC.MO(4),      KC.SPC,        KC.RALT,       KC.RGUI,       KC.APP,
+                                                     KC.MO(6),      KC.LGUI,       KC.MT(KC.ENT, KC.LALT),      KC.SPC,        KC.MO(3),      KC.MO(4),      KC.SPC,        KC.RALT,       KC.RGUI,       KC.APP,
     ],
     [
         KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,    KC.TRNS,                                                    KC.PGUP,    KC.HOME,    KC.UP,      KC.END,     KC.VOLU,    KC.DEL,
