@@ -2,15 +2,15 @@
 
 ## Kmk Part
 
-Almost nothing needs to be changed here if you keyboard works it takes no extra
-configuration to bring to peg.
+Almost nothing needs to be changed here if your keyboard works, it takes no extra
+configuration to bring to Peg.
 
 ## Peg part
 
 Main.py:
 
- In main.py add your keymap python code (example below) Peg does not support a
- dynamic amount of layers you need to have 8 layer. You do not need  to come up
+ In main.py add your keymap Python code (example below) Peg does not support a
+ dynamic amount of layers you need to have 8 layer. You do not need to come up
  with uses for them but they should be there. Peg does not support variables as
  keycodes So swap `LOWER` for `KC.MO(1)` and anything along those lines. Also
  for your PR to be accepted your keymap should have no custom keycodes in it as
