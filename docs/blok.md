@@ -8,7 +8,7 @@ Just because the Blok comes pre-flashed with Boardsource-python it does not stop
 
 ![blok pinout](https://boardsource.imgix.net/617d3ea0-dd21-11ec-8169-f7a98d6afdaa.png)
 
-## Main pro micro pins 
+## Main pro micro pins
 
 | pin  | gpio          | capability                                                            |
 |------|---------------|-----------------------------------------------------------------------|
@@ -101,7 +101,7 @@ def rainbow_cycle(wait):
         time.sleep(wait)
 
 while True:
-    rainbow_cycle(0.001) 
+    rainbow_cycle(0.001)
 ~~~
 
 After you save the file you will see how easy the flashing process is on the Blok using CircuitPython. No need to re-compile or re-flash simply make a change to the file and it will restart on save.
@@ -115,7 +115,3 @@ After you save the file you will see how easy the flashing process is on the Blo
 [Linux /  mac set up script](https://github.com/raspberrypi/pico-setup/blob/master/pico_setup.sh)
 
 [Windows setup](https://github.com/ndabas/pico-setup-windows)
-
-
-
-

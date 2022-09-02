@@ -21,14 +21,14 @@ Main.py:
 
  ```python
 # keymap
-keyboard.keymap = [ [layer 0...], 
-[layer 1...], 
-[layer 2...], 
-[layer 3...], 
-[layer 4...], 
-[layer 5...], 
-[layer 6...], 
-[layer 7...] ] 
+keyboard.keymap = [ [layer 0...],
+[layer 1...],
+[layer 2...],
+[layer 3...],
+[layer 4...],
+[layer 5...],
+[layer 6...],
+[layer 7...] ]
 # keymap
 ```
 
