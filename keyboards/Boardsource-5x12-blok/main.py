@@ -13,7 +13,7 @@ keyboard = KMKKeyboard()
 modtap = ModTap()
 layers_ext = Layers()
 keyboard.modules.append(layers_ext)
-keyboard.modules.append(modtap) 
+keyboard.modules.append(modtap)
 
 # keymap
 keyboard.keymap = [
@@ -27,5 +27,5 @@ keyboard.keymap = [
 [KC.GRV,KC.F1,KC.F2,KC.F3,KC.F4,KC.F5,KC.F6,KC.F7,KC.F8,KC.F9,KC.F10,KC.F11,KC.ESC,KC.N1,KC.N2,KC.N3,KC.N4,KC.N5,KC.N6,KC.N7,KC.N8,KC.N9,KC.N0,KC.DEL,KC.TRNS,KC.N4,KC.N5,KC.N6,KC.PLUS,KC.F5,KC.F6,KC.MINS,KC.EQL,KC.LBRC,KC.RBRC,KC.TRNS,KC.ENT,KC.N7,KC.N8,KC.N9,KC.MINS,KC.F11,KC.F12,KC.NUHS,KC.NUBS,KC.MUTE,KC.TRNS,KC.BSLS,KC.TRNS,KC.TRNS,KC.TRNS,KC.TRNS,KC.TRNS,KC.TRNS,KC.TRNS,KC.TRNS,KC.MNXT,KC.VOLD,KC.VOLU,KC.MPLY] ]
 # keymap
 
-if __name__ == '__main__':  
-    keyboard.go(hid_type=HIDModes.USB) 
+if __name__ == '__main__':
+    keyboard.go(hid_type=HIDModes.USB)

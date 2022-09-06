@@ -1,6 +1,7 @@
+
 # Encoders
 
-## KMK Part
+## Kmk Part
 
 Peg Supports encoders configured using an [Rotary Encoder
 Scanners](http://kmkfw.io/docs/scanners#rotary-encoder-scanners).
@@ -10,9 +11,9 @@ encoders after your keymap keycodes. Eg: 67 key keyboard with one encoder should
 have 69 keycodes in each layer 67 for the main matrix and 2 for the single
 encoder at the end of each layer array.
 
-## Peg Part
+## Peg part
 
-The Peg client can not guarantee that main.py or layout.json will be loaded first.
+The peg client can not guarantee that main.py or layout.json will be loaded first.
 Because of that we need to know the encoder count in both places.
 
 Main.py:
@@ -45,3 +46,4 @@ Main.py:
   * int
 
 [Return to main page](./README.md)
+

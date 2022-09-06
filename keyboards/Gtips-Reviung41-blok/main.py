@@ -13,7 +13,7 @@ keyboard = KMKKeyboard()
 modtap = ModTap()
 layers_ext = Layers()
 keyboard.modules.append(layers_ext)
-keyboard.modules.append(modtap) 
+keyboard.modules.append(modtap)
 # ledmap
 rgb_ext = Rgb_matrix(ledDisplay=[[255,55,55],[55,55,55],[55,55,55],[55,55,55],[55,55,55],[18,209,123],[255,0,0],[55,55,55],[55,55,55],[55,55,55],[55,55,55]],split=False,rightSide=False,disable_auto_write=True)
 # ledmap
@@ -29,5 +29,5 @@ keyboard.keymap=[ [KC.TAB,KC.Q,KC.W,KC.E,KC.R,KC.T,KC.Y,KC.U,KC.I,KC.O,KC.P,KC.B
 [KC.ESC,KC.EXLM,KC.AT,KC.HASH,KC.DLR,KC.PERC,KC.CIRC,KC.AMPR,KC.ASTR,KC.LPRN,KC.RPRN,KC.BSPC,KC.LCTL,KC.NO,KC.NO,KC.NO,KC.NO,KC.NO,KC.MINS,KC.EQL,KC.LCBR,KC.RCBR,KC.PIPE,KC.GRV,KC.LSFT,KC.NO,KC.NO,KC.NO,KC.NO,KC.NO,KC.UNDS,KC.PLUS,KC.LBRC,KC.RBRC,KC.BSLS,KC.TILD,KC.LALT,KC.MO(1),KC.SPC,KC.MO(2),KC.RGUI],
 [KC.ESC,KC.EXLM,KC.AT,KC.HASH,KC.DLR,KC.PERC,KC.CIRC,KC.AMPR,KC.ASTR,KC.LPRN,KC.RPRN,KC.BSPC,KC.LCTL,KC.NO,KC.NO,KC.NO,KC.NO,KC.NO,KC.MINS,KC.EQL,KC.LCBR,KC.RCBR,KC.PIPE,KC.GRV,KC.LSFT,KC.NO,KC.NO,KC.NO,KC.NO,KC.NO,KC.UNDS,KC.PLUS,KC.LBRC,KC.RBRC,KC.BSLS,KC.TILD,KC.LALT,KC.MO(1),KC.SPC,KC.MO(2),KC.RGUI]]
 # keymap
-if __name__ == '__main__': 
+if __name__ == '__main__':
     keyboard.go(hid_type=HIDModes.USB)

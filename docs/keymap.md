@@ -1,16 +1,17 @@
+
 # Keymap
 
 ## Kmk Part
 
-Almost nothing needs to be changed here if your keyboard works, it takes no extra
-configuration to bring to Peg.
+Almost nothing needs to be changed here if you keyboard works it takes no extra
+configuration to bring to peg.
 
 ## Peg part
 
 Main.py:
 
- In main.py add your keymap Python code (example below) Peg does not support a
- dynamic amount of layers you need to have 8 layer. You do not need to come up
+ In main.py add your keymap python code (example below) Peg does not support a
+ dynamic amount of layers you need to have 8 layer. You do not need  to come up
  with uses for them but they should be there. Peg does not support variables as
  keycodes So swap `LOWER` for `KC.MO(1)` and anything along those lines. Also
  for your PR to be accepted your keymap should have no custom keycodes in it as
@@ -21,14 +22,14 @@ Main.py:
 
  ```python
 # keymap
-keyboard.keymap = [ [layer 0...], 
-[layer 1...], 
-[layer 2...], 
-[layer 3...], 
-[layer 4...], 
-[layer 5...], 
-[layer 6...], 
-[layer 7...] ] 
+keyboard.keymap = [ [layer 0...],
+[layer 1...],
+[layer 2...],
+[layer 3...],
+[layer 4...],
+[layer 5...],
+[layer 6...],
+[layer 7...] ]
 # keymap
 ```
 
@@ -40,3 +41,4 @@ Layout.json:
 No part of your keymap is configured by layout.json
 
 [Return to main page](./README.md)
+

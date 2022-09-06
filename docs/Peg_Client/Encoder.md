@@ -1,7 +1,7 @@
 # Encoder
 
 The Encoder view is just like the Keymap view just with only your encoder
-available to map.  
+available to map.
 
 You have your layers off to the right and your available keycodes below
 

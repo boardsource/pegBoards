@@ -12,10 +12,10 @@ Below you will find information going over each part of the Peg client and what 
 * [Peg dev docs](../README.md)
 
 ## 0.9 Beta Warning
-Currently Peg is at version 0.9 and in open beta. 
-Please be understanding that we are working to make it the best we can but you will find bugs. 
+Currently Peg is at version 0.9 and in open beta.
+Please be understanding that we are working to make it the best we can but you will find bugs.
 When / if you find any bugs please report them [here](https://github.com/boardsource/pegBoards/issues), after checking if they are already reported.
-If there are bugs in any parts of [this repo](https://github.com/boardsource/pegBoards) you can also fix them and make a pr. 
+If there are bugs in any parts of [this repo](https://github.com/boardsource/pegBoards) you can also fix them and make a pr.
 
 ## Quick Start and Testing
 
@@ -59,7 +59,7 @@ Then you will see the main views title and 3 buttons. These buttons are aware of
 * Yes you can to type on your keyboard but if you want to make any changes using Peg you will need the drive connected and mounted.
 
 ### Peg does not detect my keyboard running KmK.
-* Much like other GUI flashing tools we need to be on the same page. You need to have a peg map on your keyboard to use it with Peg. 
+* Much like other GUI flashing tools we need to be on the same page. You need to have a peg map on your keyboard to use it with Peg.
 * If your keyboard PCB has already been added to Peg, then you just have to plug in your book and select the correct PCB eg: Boardsource-Microdox_v2-blok-left. Then select the CIRCUITPY drive when prompted. Otherwise If your chosen PCB has not been added to Peg then you will need to add it [here](https://peg.software/docs/) are a link to the docs on how to do so.
 
 ### What do I do when I get an error installing libs or kmk?
@@ -70,7 +70,7 @@ back up your keymap (main.py) if you have made any changes.
     * [Windows guide](https://learn.adafruit.com/welcome-to-circuitpython/advanced-serial-console-on-windows)
     * [MacOs guide](https://learn.adafruit.com/welcome-to-circuitpython/advanced-serial-console-on-mac-and-linux)
     * [Linux guide](https://learn.adafruit.com/welcome-to-circuitpython/advanced-serial-console-on-linux)
-* Now wipe the CircuitPython drive 
+* Now wipe the CircuitPython drive
     * Type `import storage` into the REPL.
     * Then, type `storage.erase_filesystem()` into the REPL.
     * The CIRCUITPY drive will be erased and the board will restart with an empty CIRCUITPY drive.
@@ -78,27 +78,27 @@ back up your keymap (main.py) if you have made any changes.
 
 
 ### My right side leds are not the right color on my split keyboard?
-* Both sides need to be flashed for the colors to be correct. 
+* Both sides need to be flashed for the colors to be correct.
 * When you make a change to your LEDS on a split keyboard you should see a modal pop up.
     * This modal will guide you through flashing the other side of your keyboard.
-    * Do not click the close button just follow the steps 
+    * Do not click the close button just follow the steps
         * Step 1) Unplug first side Then push the button saying its unplugged.
         * Step 2) Plug in the other side of the keyboard when prompted.
         * Step 3) Let the app flash the keyboard until you see a screen that says you can close it.
 
 
 ### RGB_TOG Does not toggle both sides of split keyboard.
-* This can happen when your keyboards maps dont match up. 
+* This can happen when your keyboards maps dont match up.
 * most of the time its ok if the keymaps are not in sync but for 1 or 2 keycodes like `RGB_TOG` the keycode needs to be on the same key on the same layer on both sides of the board.
 
 ### I installed a code block and not my keyboard does not type.
 * Code blocks are user generated code and have no guarantee that they will work. The easiest thing to do is remove that code block
-* If you want to dig in and figure out whats wrong and learn some things along the way connect to a CircuitPython repl and see what its saying. Kmk is very approachable and it could be an easy fix. If you get it working think about updating the code block in this repo so the next person doesn't have any problem's 
+* If you want to dig in and figure out whats wrong and learn some things along the way connect to a CircuitPython repl and see what its saying. Kmk is very approachable and it could be an easy fix. If you get it working think about updating the code block in this repo so the next person doesn't have any problem's
 
 ### My keymap has `ERR` keys in it.
 * This almost always happens due to custom keycodes.
-    * Make sure your custom keycode has a very simple name like "LT_1" or "GUI_MACRO_CTRL" 
-    * if you are making custom keys you cant use any spaces or non letter characters other then "_" and "-" in your `display` 
+    * Make sure your custom keycode has a very simple name like "LT_1" or "GUI_MACRO_CTRL"
+    * if you are making custom keys you cant use any spaces or non letter characters other then "_" and "-" in your `display`
 * If you are not using custom codes in your keymap then the other thing that can happen is some kind of formatting error in your keymap make sure its formatted correctly. There should be
  no un-needed spaces or returns the code needs to be read by a computer not by
  us. Only return after a layer and one space before the first layer and after
@@ -109,8 +109,5 @@ back up your keymap (main.py) if you have made any changes.
 
 ### My Blok does not show up as a CIRCUITPY Drive.
 * Before you can use peg you need to flash your controller to use [CircuitPython](https://circuitpython.org/downloads) or [Bs-Python](https://github.com/boardsource/bs-python)
-* If you are using a Blok you can download the [Bs-Python u2f here](https://peg.software/api/blok.uf2) 
+* If you are using a Blok you can download the [Bs-Python u2f here](https://peg.software/api/blok.uf2)
 * To flash  it you will just need to hold down the boot button ( or short boot pin to gnd) while you plug in the Blok. When you do that a new "drive" should pop up on your computer named "RPI-RP2" There you can drag and drop the blok.uf2 file. Your blok should now restart and show up as a CIRCUITPY Drive.
-
-
-
