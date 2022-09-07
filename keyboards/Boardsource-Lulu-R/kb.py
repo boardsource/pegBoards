@@ -52,7 +52,7 @@ class KMKKeyboard(_KMKKeyboard):
                          3 ,4 ,5 ,      40,39,38,
                          2 ,1 ,0 ,      35,36,37
                          ]
-    brightness_limit = 1.0
+    brightness_limit = 0.6
     num_pixels = 70
 
     coord_mapping = [

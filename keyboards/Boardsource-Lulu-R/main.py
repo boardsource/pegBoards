@@ -15,7 +15,7 @@ keyboard.modules.append(layers_ext)
 keyboard.modules.append(modtap)
 
 # oled
-oled_ext = Oled(OledData(corner_one={0:OledReactionType.STATIC,1:["qwertyzzzz"]},corner_two={0:OledReactionType.LAYER,1:["1","2","3","4","5","6","7","8"]},corner_three={0:OledReactionType.LAYER,1:["base","raise","lower","adjust","5","6","7","8"]},corner_four={0:OledReactionType.LAYER,1:["qwertyzzz","nums","shifted","leds","5","6","7","8"]}),toDisplay=OledDisplayMode.TXT,flip=False)
+oled_ext = Oled(OledData(corner_one={0:OledReactionType.STATIC,1:["layer:"]},corner_two={0:OledReactionType.LAYER,1:["1","2","3","4","5","6","7","8"]},corner_three={0:OledReactionType.LAYER,1:["base","raise","lower","adjust","5","6","7","8"]},corner_four={0:OledReactionType.LAYER,1:["qwerty","nums","shifted","leds","5","6","7","8"]}),toDisplay=OledDisplayMode.TXT,flip=False)
 # oled
 keyboard.extensions.append(oled_ext)
 # ledmap
