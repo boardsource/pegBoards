@@ -41,4 +41,3 @@ Layout.json:
 No part of your keymap is configured by layout.json
 
 [Return to main page](./README.md)
-
