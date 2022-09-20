@@ -8,6 +8,8 @@ import supervisor
 from kmk.extensions.peg_oled_Display import Oled,OledDisplayMode,OledReactionType,OledData
 from kmk.extensions.peg_rgb_matrix import Rgb_matrix
 from kmk.modules.split import Split, SplitSide, SplitType
+from kmk.extensions.media_keys import MediaKeys
+keyboard.extensions.append(MediaKeys())
 keyboard = KMKKeyboard()
 modtap = ModTap()
 layers_ext = Layers()
