@@ -1,0 +1,1 @@
+{"codeblock":"\n\"\"\"\nEnable TapDance\nThis codeblock enable TapDance to be used on the keyboard.\n\"\"\"\n\nfrom kmk.modules.tapdance import TapDance\ntapdance = TapDance()\nkeyboard.modules.append(tapdance)\n"}
