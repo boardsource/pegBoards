@@ -3,8 +3,6 @@ import board
 from kmk.kmk_keyboard import KMKKeyboard as _KMKKeyboard
 from kmk.scanners import DiodeOrientation
 
-
-
 class KMKKeyboard(_KMKKeyboard):
     col_pins = (
         board.GP29,
@@ -17,9 +15,8 @@ class KMKKeyboard(_KMKKeyboard):
     row_pins = (board.GP04, board.GP05, board.GP06, board.GP07)
     diode_orientation = DiodeOrientation.COLUMNS
     data_pin = board.RX
-
     i2c = board.I2C
-
+    rgb_pixel_pin = board.TX
     SCL=board.SCL
     SDA=board.SDA
     led_key_pos = [24,23,18,17,10,9,36,37,44,45,50,51,
