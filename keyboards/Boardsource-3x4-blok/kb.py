@@ -10,4 +10,3 @@ class KMKKeyboard(_KMKKeyboard):
     col_pins = (board.GP21, board.GP23, board.GP20, board.GP22)
     diode_orientation = DiodeOrientation.COLUMNS
     i2c = board.I2C
-    powersave_pin = board.P0_13
