@@ -1,0 +1,1 @@
+{"codeblock":"\n\"\"\"\nEnable Mouse Keys\nEnables the use of KMK mouse keys\n\"\"\"\n\n\"\"\"\nEnable Mouse Keys\nThis codeblock enables mouse keys to be used on the keyboard.\n\"\"\"\n\nfrom kmk.modules.mouse_keys import MouseKeys\nmousekeys = MouseKeys()\nkeyboard.modules.append(mousekeys)\n"}
