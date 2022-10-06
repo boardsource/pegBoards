@@ -103,9 +103,6 @@ oled_ext = Oled(
 
 keyboard.extensions.append(oled_ext)
 
-# Edit your layout below
-# Currently, that's a default QMK Kyria Layout - https://config.qmk.fm/#/splitkb/kyria/rev1/LAYOUT
-
 # fmt: off
 # keymap
 keyboard.keymap = [
