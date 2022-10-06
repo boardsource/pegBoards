@@ -1,0 +1,1 @@
+{"codeblock":"\n\"\"\"\nEnable ModTap\nThis codeblock enables ModTap to be used on the device.\n\"\"\"\n\n\"\"\"\nEnable ModTap\nThis codeblock enables ModTap to be used on the device.\n\"\"\"\n\nfrom kmk.modules.modtap import ModTap\nmodtap = ModTap()\nkeyboard.modules.append(modtap)\n"}
