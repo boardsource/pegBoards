@@ -1,0 +1,1 @@
+{"codeblock":"\n\"\"\"\nDebugging\nEnables kmk debugging\n\"\"\"\n\n\"\"\"\nEnable Debug\nThis codeblock enables debug mode\n\"\"\"\nkeyboard.debug_enabled = True\n"}
