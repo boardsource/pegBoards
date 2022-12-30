@@ -9,8 +9,8 @@ from kmk.extensions.peg_oled_Display import Oled,OledDisplayMode,OledReactionTyp
 from kmk.extensions.peg_rgb_matrix import Rgb_matrix
 from kmk.modules.split import Split, SplitSide, SplitType
 from kmk.extensions.media_keys import MediaKeys
-keyboard.extensions.append(MediaKeys())
 keyboard = KMKKeyboard()
+keyboard.extensions.append(MediaKeys())
 modtap = ModTap()
 layers_ext = Layers()
 # oled
