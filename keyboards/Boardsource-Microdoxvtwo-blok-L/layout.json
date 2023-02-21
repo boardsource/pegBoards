@@ -4,7 +4,7 @@
         "oled": true,
         "ble": false,
         "underglow": true,
-        "name": "Microdox_V2",
+        "name": "MicrodoxV2",
         "creator": "Boardsource",
         "perkeyCount": 36,
         "underglowCount": 8,
