@@ -1,0 +1,1 @@
+{"code":"KC.LT(2, KC.ENTER, tap_interrupted=True, tap_time=150)","display":"ENTER_MO2","keybinding":"","canHaveSub":false,"canHaveSubNumber":false,"subNumber":0,"Description":"Pushes layer 2 if held and enter if tapped"}
