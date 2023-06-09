@@ -1,12 +1,24 @@
-The Blok is a Raspberry pi RP2040-based microcontroller. Below we will go over everything you need to know about it.
+The Blok is a Raspberry pi RP2040-based microcontroller. Below we will go over
+everything you need to know about it.
 
-Unlike other RP2040-based microcontroller the Blok come pre-flashed with [Boardsource-python](https://github.com/boardsource/bs-python) (fork of [CircuitPython](https://circuitpython.org/)) This allows for easy setup with [Peg](https://peg.software/) or [KmK](https://www.kmkfw.io/). If you need to reflash your version of Boardsource-python you can download it [here](https://peg.software/api/blok.uf2) or play around building your own.
+Unlike other RP2040-based microcontroller the Blok come pre-flashed with
+[Boardsource-python](https://github.com/boardsource/bs-python) (fork of
+[CircuitPython](https://circuitpython.org/)) This allows for easy setup with
+[Peg](https://peg.software/) or [KmK](https://www.kmkfw.io/). If you need to
+reflash your version of Boardsource-python you can download it
+[here](https://peg.software/api/blok.uf2) or play around building your own.
 
-Just because the Blok comes pre-flashed with Boardsource-python it does not stop you from running any code you want. To run QMK or any other code you will just need to hold down the boot button (or short boot pin to GND) while you plug in the Blok. When you do that a new "drive" should pop up on your computer named "RPI-RP2" There you can drag and drop any `.uf2` file you want.
+Just because the Blok comes pre-flashed with Boardsource-python it does not stop
+you from running any code you want. To run QMK or any other code you will just
+need to hold down the boot button (or short boot pin to GND) while you plug in
+the Blok. When you do that a new "drive" should pop up on your computer named
+"RPI-RP2" There you can drag and drop any `.uf2` file you want.
 
-[RP2040 Datasheet](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf)
+[RP2040
+Datasheet](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf)
 
-![blok pinout](https://boardsource.imgix.net/617d3ea0-dd21-11ec-8169-f7a98d6afdaa.png)
+![blok
+pinout](https://boardsource.imgix.net/617d3ea0-dd21-11ec-8169-f7a98d6afdaa.png)
 
 ## Main pro micro pins
 
@@ -50,20 +62,35 @@ Just because the Blok comes pre-flashed with Boardsource-python it does not stop
 
 ## Quickstart with Peg.
 
-If your keyboard PCB has already been added to Peg, then you just have to plug in your book and select the correct PCB eg: `Boardsource-Microdox_v2-blok-left`. Then select the `CIRCUITPY` drive when prompted. Otherwise, If your chosen PCB has not been added to Peg check [here](https://peg.software/docs/Peg_Client/supported_keyboards) then you will need to add it [here](https://peg.software/docs/) are a link to the docs on how to do so.
+If your keyboard PCB has already been added to Peg, then you just have to plug
+in your book and select the correct PCB eg: `Boardsource-Microdox_v2-blok-left`.
+Then select the `CIRCUITPY` drive when prompted. Otherwise, If your chosen PCB
+has not been added to Peg check
+[here](https://peg.software/docs/Peg_Client/supported_keyboards) then you will
+need to add it [here](https://peg.software/docs/) are a link to the docs on how
+to do so.
 
 
 ## CircuitPython overview and test code.
 
-We like CircuitPython because of its lack of required knowledge and ease of use. So below we will get you going with a little bit of code that shows you how it works and you can play with it from there. It would be far too much to go over a C/C++ quick start be there are links for that below.
+We like CircuitPython because of its lack of required knowledge and ease of use.
+So below we will get you going with a little bit of code that shows you how it
+works and you can play with it from there. It would be far too much to go over a
+C/C++ quick start be there are links for that below.
 
 #### The lib folder
 
-To use libraries in CircuitPython you need to include them with your code. To do so simply make a `lib/` folder in the root of your `CIRCUITPY` drive, then you can place any library in that folder and import it like normal python. To download libraries you can get most of them from one zip that you can download [here](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/download/20220415/adafruit-circuitpython-bundle-7.x-mpy-20220415.zip). For the below example no libraries are needed.
+To use libraries in CircuitPython you need to include them with your code. To do
+so simply make a `lib/` folder in the root of your `CIRCUITPY` drive, then you
+can place any library in that folder and import it like normal python. To
+download libraries you can get most of them from one zip that you can download
+[here](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/download/20220415/adafruit-circuitpython-bundle-7.x-mpy-20220415.zip).
+For the below example no libraries are needed.
 
 #### The Code
 
-The code below will turn on the built-in RGB led and cycle colors. Edit your `code.py`  or `main.py` to have this code in it and test it out.
+The code below will turn on the built-in RGB led and cycle colors. Edit your
+`code.py`  or `main.py` to have this code in it and test it out.
 
 ~~~python
 import board
@@ -104,14 +131,19 @@ while True:
     rainbow_cycle(0.001)
 ~~~
 
-After you save the file you will see how easy the flashing process is on the Blok using CircuitPython. No need to re-compile or re-flash simply make a change to the file and it will restart on save.
+After you save the file you will see how easy the flashing process is on the
+Blok using CircuitPython. No need to re-compile or re-flash simply make a change
+to the file and it will restart on save.
 
 ## C/C++ setup Links
 
-[Getting Started with Raspberry Pi Pico](https://datasheets.raspberrypi.org/pico/getting-started-with-pico.pdf)
+[Getting Started with Raspberry Pi
+Pico](https://datasheets.raspberrypi.org/pico/getting-started-with-pico.pdf)
 
-[Raspberry Pi Pico C/C++ SDK ](https://datasheets.raspberrypi.org/pico/raspberry-pi-pico-c-sdk.pdf)
+[Raspberry Pi Pico C/C++ SDK
+](https://datasheets.raspberrypi.org/pico/raspberry-pi-pico-c-sdk.pdf)
 
-[Linux /  mac set up script](https://github.com/raspberrypi/pico-setup/blob/master/pico_setup.sh)
+[Linux /  mac set up
+script](https://github.com/raspberrypi/pico-setup/blob/master/pico_setup.sh)
 
 [Windows setup](https://github.com/ndabas/pico-setup-windows)

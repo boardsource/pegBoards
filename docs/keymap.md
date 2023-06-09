@@ -1,4 +1,3 @@
-
 # Keymap
 
 ## Kmk Part
@@ -33,8 +32,9 @@ keyboard.keymap = [ [layer 0...],
 # keymap
 ```
 
-`# keymap` Is just like any other wrapping comment in Peg, letting the client know that it should parse this code as a keymap configuration.
-You need one comment above and below your keymap code.
+`# keymap` Is just like any other wrapping comment in Peg, letting the client
+know that it should parse this code as a keymap configuration.  You need one
+comment above and below your keymap code.
 
 Layout.json:
 
