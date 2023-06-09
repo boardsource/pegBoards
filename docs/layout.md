@@ -7,8 +7,7 @@ load it up in the peg client to make sure everything is working as intended.
 ## Features
 
 `features` Is an object with 16 fields all of them need to be set even if the
-value is 0 or false.
-The spelling is important but the order is not.
+value is 0 or false.  The spelling is important but the order is not.
 
 * `name`
   * String
@@ -18,23 +17,23 @@ The spelling is important but the order is not.
     * The designer of the keyboard
 * `ble`
   * Boolean
-    * Is the keyboard BLE first due to a limitation in kmk at the time of
-          making this you need on config for BLE and one for wired with the same
+    * Is the keyboard BLE first due to a limitation in kmk at the time of making
+          this you need on config for BLE and one for wired with the same
           controller.
 * `split`
   * Boolean
     * Is the keyboard split using 2 controllers?
 * `rightSide`
   * Boolean
-    * Is the keyboard split and is this layout.json on the right side (off
-          side) Peg does not support ee hands the left side must be plugged in.
+    * Is the keyboard split and is this layout.json on the right side (off side)
+          Peg does not support ee hands the left side must be plugged in.
 * `rx_tx`
   * Boolean
     * Is the keyboard split and is it configured for 2 wire communication?
 * `uartFlip`
   * Boolean
-    * Is the keyboard split and is it configured for 2 wire communication
-          and needs Uart Flipped?
+    * Is the keyboard split and is it configured for 2 wire communication and
+          needs Uart Flipped?
 * `splitPico`
   * Boolean
     * Do you need to use `use_pio=True` in your split? this does it
@@ -62,7 +61,10 @@ The spelling is important but the order is not.
           each side = encoderCount:2)
 * `bootSize`
   * Int
-    * Leave at 0 unless you need a boot.py in that case then it should be one of the 2 numbers eg: 4096  will come out as `supervisor.set_next_stack_limit(4096 + 4096)` if included the client will generate the file if its not there.
+    * Leave at 0 unless you need a boot.py in that case then it should be one of
+      the 2 numbers eg: 4096  will come out as
+      `supervisor.set_next_stack_limit(4096 + 4096)` if included the client will
+      generate the file if its not there.
 
 ## Layout
 
@@ -87,9 +89,9 @@ Height is not supported at this time.
 
 ## Underglow
 
-`underglow` is an array of underglow LEDs.
-This is configured in the same way as Layout. x/y cords of where the underglow
-LEDS are on your board as if you were looking though the board.
+`underglow` is an array of underglow LEDs.  This is configured in the same way
+as Layout. x/y cords of where the underglow LEDS are on your board as if you
+were looking though the board.
 
 Each LED is a object with 3 fields
 
