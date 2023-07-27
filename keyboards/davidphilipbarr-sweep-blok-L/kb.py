@@ -4,7 +4,7 @@
 
 
 from kmk.kmk_keyboard import KMKKeyboard as _KMKKeyboard
-from kmk.quickpin.pro_micro.kb2040 import pinout as pins
+from kmk.quickpin.pro_micro.boardsource_blok import pinout as pins
 from kmk.scanners.keypad import KeysScanner
 
 # GPIO to key mapping - each line is a new row.
@@ -32,3 +32,4 @@ class KMKKeyboard(_KMKKeyboard):
     10, 11, 12, 13, 14,   31, 30, 29, 28, 27,
                 15, 16,   33, 32
     ]
+    data_pin = pins[1]
