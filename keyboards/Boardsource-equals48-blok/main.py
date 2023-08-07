@@ -5,7 +5,6 @@ from kmk.modules.modtap import ModTap
 from kmk.hid import HIDModes
 from kmk.handlers.sequences import send_string
 import supervisor
-from kmk.extensions.peg_oled_Display import Oled,OledDisplayMode,OledReactionType,OledData
 from kmk.extensions.peg_rgb_matrix import Rgb_matrix
 keyboard = KMKKeyboard()
 modtap = ModTap()
@@ -13,7 +12,6 @@ layers_ext = Layers()
 keyboard.modules.append(layers_ext)
 keyboard.modules.append(modtap)
 
-keyboard.extensions.append(oled_ext)
 # ledmap
 rgb_ext = Rgb_matrix(ledDisplay=[[85,0,255],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[85,0,255],[85,0,255],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[85,0,255],[85,0,255],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[0,255,234],[85,0,255],[85,0,255],[85,0,255],[85,0,255],[85,0,255],[85,0,255],[0,255,234],[0,255,234],[85,0,255],[85,0,255],[85,0,255],[85,0,255],[85,0,255],[0,255,234],[85,0,255],[85,0,255],[85,0,255],[85,0,255],[0,255,234],[0,255,234],[85,0,255],[85,0,255],[85,0,0]],disable_auto_write=True)
 # ledmap
