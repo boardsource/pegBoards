@@ -19,7 +19,7 @@ class KMKKeyboard(_KMKKeyboard):
     tx = board.TX
     rgb_pixel_pin = board.GP29
     i2c = board.I2C
-    data_pin = board.RX
+    data_pin = board.TX
     rgb_pixel_pin = board.GP29
     i2c = board.I2C
     SCL=board.SCL
