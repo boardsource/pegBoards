@@ -12,7 +12,7 @@
         "rightSide": false,
         "encoders": false,
         "encoderCount": 0,
-        "rx_tx": true,
+        "rx_tx": false,
         "uartFlip": false,
         "splitPico": false,
         "bootSize": 0
