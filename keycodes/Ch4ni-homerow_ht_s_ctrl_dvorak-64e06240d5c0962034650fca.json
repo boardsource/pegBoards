@@ -1,0 +1,1 @@
+{"code":"KC.HT(KC.S, KC.LCTRL, tap_interrupted=True)","display":"HOMEROW_TAP_DVORAK_S_CTRL","keybinding":"","canHaveSub":false,"canHaveSubNumber":false,"subNumber":0,"Description":"Homerow mod for dvorak layout - sends 's' on tap, 'ctrl' on hold"}
