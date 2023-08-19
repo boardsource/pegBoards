@@ -1,0 +1,1 @@
+{"code":"KC.HT(KC.A, KC.LCTRL, tap_interrupted=True)","display":"HOMEROW_TAP_DVORAK_A_CTRL","keybinding":"","canHaveSub":false,"canHaveSubNumber":false,"subNumber":0,"Description":"Homerow mod for dvorak layout - sends 'a' on tap, 'ctrl' on hold"}
