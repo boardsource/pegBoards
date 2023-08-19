@@ -1,0 +1,1 @@
+{"code":"KC.HT(KC.U, KC.LALT,tap_interrupted=True)","display":"HOMEROW_TAP_DVORAK_U_ALT","keybinding":"","canHaveSub":false,"canHaveSubNumber":false,"subNumber":0,"Description":"Homerow mod for dvorak layout - sends 'u' on tap, 'alt' on hold"}
