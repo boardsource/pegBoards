@@ -8,8 +8,8 @@ from kmk.scanners import DiodeOrientation
 class KMKKeyboard(_KMKKeyboard):
     row_pins = (board.GP12,board.GP13,board.GP16,board.GP17)
     col_pins = (
-        board.TX,
-        board.RX,
+        board.GP00,
+        board.GP01,
         board.GP02,
         board.GP03,
         board.GP04,
