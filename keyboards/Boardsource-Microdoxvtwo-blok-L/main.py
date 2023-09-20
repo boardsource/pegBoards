@@ -5,7 +5,7 @@ from kmk.modules.modtap import ModTap
 from kmk.hid import HIDModes
 from kmk.handlers.sequences import send_string
 import supervisor
-from kmk.extensions.peg_oled_Display import Oled,OledDisplayMode,OledReactionType,OledData
+from kmk.extensions.peg_oled_display import Oled,OledDisplayMode,OledReactionType,OledData
 from kmk.extensions.peg_rgb_matrix import Rgb_matrix
 from kmk.modules.split import Split, SplitSide, SplitType
 keyboard = KMKKeyboard()
