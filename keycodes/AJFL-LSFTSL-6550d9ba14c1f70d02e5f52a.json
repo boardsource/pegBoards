@@ -1,0 +1,1 @@
+{"code":"KC.MT(KC.SLSH, KC.LSFT, tap_time=150)","display":"LSFTSL","keybinding":"","canHaveSub":false,"canHaveSubNumber":false,"subNumber":0,"Description":"Pushes shift if held and / if tapped"}
