@@ -1,0 +1,1 @@
+{"code":"KC.LT(1, KC.CAPS, prefer_hold=True, tap_interrupted=True, tap_time=150)","display":"LT1,KC.CAPS","keybinding":"","canHaveSub":false,"canHaveSubNumber":false,"subNumber":0,"Description":"Pushes layer 1 if held and CAPS if tapped"}
