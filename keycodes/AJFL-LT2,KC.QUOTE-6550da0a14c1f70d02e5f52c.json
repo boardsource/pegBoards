@@ -1,0 +1,1 @@
+{"code":"KC.LT(2, KC.QUOTE, prefer_hold=True, tap_interrupted=True, tap_time=150)","display":"LT2,KC.QUOTE","keybinding":"","canHaveSub":false,"canHaveSubNumber":false,"subNumber":0,"Description":"Pushes layer 2 if held and ' if tapped"}
