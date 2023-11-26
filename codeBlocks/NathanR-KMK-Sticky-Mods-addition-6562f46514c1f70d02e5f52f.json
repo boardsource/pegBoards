@@ -1,0 +1,1 @@
+{"codeblock":"\n\"\"\"\nKMK Sticky Mods addition\nAdds the ability to utilize KMK sticky mods.\n\n\"\"\"\n\nfrom kmk.modules.sticky_mod import StickyMod\nsticky_mod = StickyMod()\nkeyboard.modules.append(sticky_mod)\n"}
