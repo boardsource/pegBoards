@@ -4,7 +4,7 @@ software! Peg is built to keep you as up to date as it can. You should be able
 to have it auto update for you in most cases. When things change too far, you
 may need to give it a hand to get all of the latest code.
 
-# Getting the latest firmware
+# Getting in bootloader
 
 The first step in getting up to date is to get your device into the bootloader.
 This will be different for every device, but the board specific docs cover it.
