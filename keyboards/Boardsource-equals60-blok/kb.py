@@ -20,7 +20,7 @@ class KMKKeyboard(_KMKKeyboard):
         board.GP08,
         board.GP07,
         board.GP06
-   
+
     )
     diode_orientation = DiodeOrientation.COLUMNS
     brightness_limit = 0.6
