@@ -33,4 +33,3 @@ class KMKKeyboard(_KMKKeyboard):
                 15, 16,   33, 32
     ]
     data_pin = pins[1]
-

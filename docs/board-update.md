@@ -44,7 +44,7 @@ are no "full" verisons for Circuitpython, only bs-python.
 # Flashing the file
 
 All you have to do in most cases is to drop the uf2 file onto the RPI-RP2 "flash
-drive" that we found earlier. That's all there is to it! 
+drive" that we found earlier. That's all there is to it!
 
 # Confirming that it worked
 
