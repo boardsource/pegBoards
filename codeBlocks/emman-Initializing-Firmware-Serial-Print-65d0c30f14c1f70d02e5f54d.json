@@ -1,0 +1,1 @@
+{"codeblock":"\n\"\"\"\nInitializing Firmware Serial Print\nGood for verifying via serial if firmware starts\n\"\"\"\n\nprint(\"Initializing Keyboard\")\n"}
