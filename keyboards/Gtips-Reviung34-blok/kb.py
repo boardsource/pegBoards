@@ -13,7 +13,7 @@ class KMKKeyboard(_KMKKeyboard):
         board.GP06,
         board.GP07,
         board.GP08,
-        board.GP09,  
+        board.GP09,
         board.GP22,
         board.GP20,
         board.GP23,
@@ -25,7 +25,7 @@ class KMKKeyboard(_KMKKeyboard):
         board.GP28,
         board.GP27,
         board.GP26,
-  
+
     )
 
     diode_orientation = DiodeOrientation.COLUMNS

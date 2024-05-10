@@ -62,4 +62,3 @@ class KMKKeyboard(_KMKKeyboard):
              25,26, 27, 28,         60, 59, 58, 57,
              30,31,62,63
     ]
-

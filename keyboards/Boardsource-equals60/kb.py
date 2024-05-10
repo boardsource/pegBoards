@@ -20,7 +20,7 @@ class KMKKeyboard(_KMKKeyboard):
         board.GP09,
         board.GP10,
         board.GP11
-   
+
     )
     diode_orientation = DiodeOrientation.COLUMNS
     i2c = board.I2C
